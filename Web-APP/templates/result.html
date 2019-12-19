@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel='stylesheet' href="/static/css/bootstrap.css"/>
+  <link rel='stylesheet' href="/static/css/style.css"/>
+  </head>
+  <body>
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+
+  <div class="page-header">
+      <h1 ><center>Result</center></h1>
+    </div>
+  <div class="Super Resolution examples">
+      <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail" style="background: none; border: none;">
+                <div id = "thediv">
+                <img  id = "before" src="{{'/static/input/' + input}}" alt="Lights"  >
+                </div>
+                <div class="caption">
+                  <p ><center style="color: white;font-size: 1.20em;">Before</center></p>
+                  <center>
+                    <a href="{{'/static/input/' + input}}" download=""> <span class="glyphicon glyphicon-download-alt"></span></a>
+                    <input type="button" value ="-" onclick="zoom('before',0.89)"/>
+                    <input type="button" value ="+" onclick="zoom('before',1.1)"/>
+                    <span class = "zoom" style="color: #FFFFFF;"><span id = "in">20</span>%</span>
+                  </center>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail" style="background: none; border: none;">
+                <div id = "thediv">
+                  <img  id = "after" src="{{'/static/output/' + output}}" alt="Lights">
+                </div>
+                
+                
+                <div class="caption">
+                  <p ><center style="color: white;font-size: 1.20em;">After</center></p>
+                  <center>
+                    <a href="{{'/static/output/' + output}}" download=""> <span class="glyphicon glyphicon-download-alt"></span></a>
+                    <input type="button" value ="-" onclick="zoom('after',0.89)"/>
+                    <input type="button" value ="+" onclick="zoom('after',1.1)"/>
+                    <span class = "zoom" style="color: #FFFFFF;"><span id = "out">20</span>%</span>
+                  </center>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <a href="http://127.0.0.1:5000/demo">
+          <center><button type="button" ><span>Try Demo Again</span></button></center>
+      </a>    
+    </div>
+
+    <script>
+
+      window.onload = function(){zoom("after", 1.8); zoom("before", 1.8)}
+
+      function zoom(id, zm) {
+      if (id === "after"){
+        x = parseInt(document.getElementById("out").textContent);
+        x = x + parseInt((zm - 1) * 100);
+        document.getElementById("out").innerHTML = x;
+
+      }
+      else {
+        x = parseInt(document.getElementById("in").textContent);
+        x = x + parseInt((zm - 1) * 100);
+        document.getElementById("in").innerHTML = x;
+      }
+      img=document.getElementById(id)
+      wid=img.width
+      ht=img.height
+      img.style.width=(wid*zm)+"px"
+      img.style.height=(ht*zm)+"px"
+          img.style.marginLeft = -(img.width/2) + "px";
+          img.style.marginTop = -(img.height/2) + "px";
+      }
+
+    </script>
+
+  </body>
+</html>

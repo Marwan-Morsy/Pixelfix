@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(102.47deg,#191a55 -13.24%,#cc99ff 114.83%);
+  color : #fff;
+}
+
+
+#thediv {
+    margin:0 auto;
+  height:400px;
+  width:400px;
+  overflow:hidden;
+  }
+#thediv img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+.caption  input, .caption a {
+   text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ background: linear-gradient(102.47deg,#9763ff -13.24%,#a12dad 114.83%)
+}
+
+
+.error {
+  color: red;
+  font-size: 0.90em;
+  display: none;
+  
+}
+.abstract p {
+  width: 70%;
+  margin: auto auto;
+  font-size: 1.2em;
+}
+select { 
+  -webkit-border-radius:25px; 
+  -moz-border-radius:25px; 
+  border-radius:25px; 
+  background: linear-gradient(102.47deg,#191a55 -13.24%,#cc99ff 114.83%);
+} 
+
+option { 
+-webkit-border-radius:25px; 
+-moz-border-radius:25px; border-radius:25px; 
+color:blue; 
+}
+
+.inputImage {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.row {
+	padding: 15px;
+	position: relative;
+	margin: auto;
+}
+button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+ background: linear-gradient(102.47deg,#9763ff -13.24%,#a12dad 114.83%);
+	
+}
+.header{
+	padding: 2px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+	 background: linear-gradient(102.47deg,#9763ff -13.24%,#a12dad 114.83%);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  </head>
+  <body>
+      
+  	<script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/index.js"></script>
+	
+	<div class="container">
+	  <div class="page-header">
+      <h1 ><center >Let's do it</center></h1>
+    </div>
+    <form action="demo/result" method="post" enctype="multipart/form-data" onsubmit="return validateForm();"> 
+        <label for="InputImage">Upload Image:</label>
+        <input type="file" id="InputImage" accept="image/*" name = "inputImage"  onchange="readURL(this);">  
+        <div class="inputImage">
+          <img id="imag_1" src="#" class="img-thumbnail"/>
+        </div>
+        <p class="error" id ="msg_1">You Should Choice Image !! </p>
+       
+        <input type="checkbox" id="SuperResolution" onclick="scal_disply()" name="superResolution" checked>
+        <label  for="SuperResolution">Super Resolution:</label>
+        <br>
+        <label >Scale:</label>
+        <br>
+        <input class="scale" type="radio" id="customRadio1" name="scale" value="2" checked>
+        <label  for="customRadio1" >2X</label>
+        <br>
+        <input class="scale" type="radio" id="customRadio2" name="scale" value="3">
+        <label  for="customRadio2">3X</label>
+        <br>
+        <input class="scale" type="radio" id="customRadio3" name="scale" value="4">
+        <label  for="customRadio3">4X</label>
+        <br>
+       
+       
+        <input type="checkbox" id="Denoising"  name="denoising" onclick="smoothingFactor_disaply()">
+        <label  for="Denoising">Denoising:</label>
+        <br>
+        <label >smoothing factor:</label>
+        <select class="smoothingFactor" name = "smoothingFactor" disabled >
+          <option value="Auto" selected>Auto</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+          <option value="45">45</option>
+          <option value="50">50</option>
+          <option value="55">55</option>
+          <option value="60">60</option>
+          <option value="65">65</option>
+          <option value="70">70</option>
+          <option value="75">75</option>
+        </select>
+      <p class="error" id ="msg_2">You Should Select Super Resolution ,Denoising or both !! </p>
+      <div class="button">
+        <center><button type="submit" ><span>Run </span></button></center>
+      </div>
+
+    </form> 
+  </div>
+	</body>
+</html>
