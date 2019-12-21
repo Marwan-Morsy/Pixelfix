@@ -36,12 +36,12 @@ Pixelfix is a web service that enhances the image quality by providing automatic
 
 ### Super Resolution Results
 
-* ![Upscaling X2](Images/R1.png) 
-* ![Upscaling X4](Images/R2.png)
+ ![Upscaling X2](Images/R1.png) 
+ ![Upscaling X4](Images/R2.png)
 
 ### Image Denoising Results
-* ![Denoised with sigma 50](Images/R3.png) 
-* ![Denoised with sigma 60](Images/R4.png)
+ ![Denoised with sigma 50](Images/R3.png) 
+ ![Denoised with sigma 60](Images/R4.png)
 
 
 
