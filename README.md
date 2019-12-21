@@ -21,6 +21,7 @@ Pixelfix is a web service that enhances the image quality by providing automatic
 
 ## Application Demo
 
+[![Watch the video](Images/Application.jpg)](https://drive.google.com/file/d/1PYEWfGf_oKsWjHYupg82h04yrvkZvRu9/view?usp=sharing)
 
 
 
