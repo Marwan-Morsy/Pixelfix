@@ -21,7 +21,16 @@ Pixelfix is a web service that enhances the image quality by providing automatic
 
 ## Application Demo
 
-[![Watch the video](Images/Application.jpg)](https://drive.google.com/file/d/1PYEWfGf_oKsWjHYupg82h04yrvkZvRu9/view?usp=sharing)
+[![Watch the video](Images/download.jpg)](https://drive.google.com/file/d/1PYEWfGf_oKsWjHYupg82h04yrvkZvRu9/view?usp=sharing)
+
+## Authors
+
+* [Marwan Morsy](https://github.com/Marwan-Morsy)
+* [Karim Gerges]
+* [Ahmed Reda](https://github.com/AhmedRedaAmin)
+* [Mohammed Bakr](https://github.com/MohamedBakrAli)
+* [Mostafa Shabana]
+* [Wesam Yakout]
 
 
 
