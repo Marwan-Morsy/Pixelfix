@@ -19,7 +19,7 @@ Pixelfix is a web service that enhances the image quality by providing automatic
 * PSNR computes the peak signal-to-noise ratio, in decibels, between two images.
 * SSIM (structural similarity) is used for measuring the similarity between two images.
 
-# Application Demo
+## Application Demo
 
 
 
